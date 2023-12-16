@@ -17,7 +17,7 @@
   function onMouseMove({pageX, pageY}) {
     const currentPoint = {x: pageX, y: pageY};
     const distance = getDistance(previousPoint, currentPoint);
-    const opacity = Math.min(0.5, (1 / (distance+0.01)));
+    const opacity = Math.min(0.2, (1 / (distance+0.01)));
 
     context.beginPath();
 
